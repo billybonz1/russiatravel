@@ -30,45 +30,99 @@ body input:required:valid,
 body textarea:required:valid{
     color: #666;
 }
-
-//Custom Styles Here
-
-footer{
-    background-color: #000000;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 11px;
-    padding-bottom: 2px;
-    ul{
-        margin-top: 19px;
-        float: left;
-        padding-left: 0;
-        padding-right: 0;
-        li{
-            float: left;
-            margin-right: 20px;
-            a{
-                text-decoration: none;
-                color: #616161;
-                font-size: 16px;
-            }
-            a:hover{
-                text-decoration: none;
-                color: #fff;
-            }
-        }
-    }
-    .gs{
-        float: right;
-        margin: 9px;
-        margin-right: 15px;
-        display: block;
-    }
-    .gs:visited, .gs:active{
-        text-decoration:none;
-    }
+.inner{
+    width:1600px;
+    margin: 0 auto;
 }
+//Custom Styles Here
+h1{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+}
+.news{
+    text-align: center;
 
+}
+.news-bord{
+    border-top: 1px solid #d3d3d3;
+}
+.line{
+    width: 65px;
+    height: 3px;
+    background-color: #dedede;
+    margin-top: 16px;
+}
+.news-bord h2{
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.data{
+    color: #dd0808;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 10px;
+}
+.locale{
+    color: #8b8b8b;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 8px;
+}
+.info-sity{
+    color: #222;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 15px;
+}
+.news-bord img{
+    padding: 15px 0 0 0;
+}
+.news-ser{
+    height: 213px;
+    color: #8b8b8b;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 15px;
+}
+.all-news-popup{
+    border: 2px solid lightgrey;
+    background: #fff;
+    border-radius: 4px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 39px ;
+    &:hover{
+        background-color: #8a8a8a;
+    }
+
+}
+.bot-news-button{
+    width: 181px;
+    margin: 20px auto;
+}
+.news p{
+    color: #222;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
 //ALWAYS END
 @import "media.scss";
