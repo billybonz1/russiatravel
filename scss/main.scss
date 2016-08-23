@@ -1,31 +1,25 @@
 @import "bourbon";
 @import "vars.scss";
-
 *::-webkit-input-placeholder{
     color: #666;
     opacity: 1;
 }
-
 *:-moz-placeholder{
     color: #666;
     opacity: 1;
 }
-
 *::-moz-placeholder{
     color: #666;
     opacity: 1;
 }
-
 *:-ms-input-placeholder{
     color: #666;
     opacity: 1;
 }
-
 body input:focus:required:invalid,
 body textarea:focus:required:invalid{
     color: #666;
 }
-
 body input:required:valid,
 body textarea:required:valid{
     color: #666;
@@ -42,7 +36,6 @@ h1{
 }
 .news{
     text-align: center;
-
 }
 .news-bord{
     border-top: 1px solid #d3d3d3;
@@ -110,7 +103,6 @@ h1{
     &:hover{
         background-color: #8a8a8a;
     }
-
 }
 .bot-news-button{
     width: 181px;
@@ -123,7 +115,6 @@ h1{
     font-weight: 400;
     text-transform: uppercase;
 }
-
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
