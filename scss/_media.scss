@@ -2,16 +2,24 @@
 @import "vars.scss";
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+  .news-ser{
+    max-height: 140px;
+  }
+}
 @media only screen and (max-width : 1200px) {
     .news-ser{
-      max-height: 195px;
+      max-height: 139px;
     }
 }
 
 @media only screen and (max-width : 1128px) {
-	.news-bord h2{
+	.news-bord h4{
 		min-height: 126px;
 	}
+    .news-ser{
+      max-height: 100px;
+    }
 
 }
 
@@ -45,10 +53,13 @@
 
 	}
   .news-ser{
-    max-height: 120px;
+    max-height: 235px;
   }
   .news-mid__item{
     min-height: 592px;
+  }
+  .routes__item{
+    min-height:474px;
   }
 }
 

@@ -22,6 +22,9 @@ body input:required:valid,
 body textarea:required:valid {
   color: #666; }
 
+.news-mid {
+  margin-top: 30px; }
+
 .news-right {
   color: #222;
   font-family: Roboto;
@@ -74,10 +77,10 @@ body textarea:required:valid {
   font-size: 15px;
   font-weight: bold;
   line-height: 20px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .news-bord img {
-  padding: 15px 0 0 0;
   width: 100%; }
 
 .news-ser {
@@ -87,7 +90,7 @@ body textarea:required:valid {
   font-weight: 400;
   line-height: 20px;
   padding-top: 15px;
-  max-height: 200px;
+  max-height: 210px;
   overflow: hidden; }
 
 .all-news-popup {
@@ -108,7 +111,17 @@ body textarea:required:valid {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 15px 0 20px 0; }
+
+.routes {
+  margin-top: 30px; }
+
+.routes__item__top {
+  min-height: 227px;
+  background: no-repeat;
+  margin-top: 20px;
+  background-size: cover; }
 
 .routes__item__p1 {
   color: #222;
@@ -116,23 +129,31 @@ body textarea:required:valid {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 32px 51px 0 76px; }
 
 .routes__item__p2 {
   color: #222;
   font-family: 'Istok Web', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 22px; }
+  line-height: 22px;
+  padding: 10px 21px 24px 78px; }
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1500px) {
+  .news-ser {
+    max-height: 140px; } }
+
 @media only screen and (max-width: 1200px) {
   .news-ser {
-    max-height: 195px; } }
+    max-height: 139px; } }
 
 @media only screen and (max-width: 1128px) {
-  .news-bord h2 {
-    min-height: 126px; } }
+  .news-bord h4 {
+    min-height: 126px; }
+  .news-ser {
+    max-height: 100px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -156,9 +177,11 @@ body textarea:required:valid {
       float: none;
       display: block; }
   .news-ser {
-    max-height: 120px; }
+    max-height: 235px; }
   .news-mid__item {
-    min-height: 592px; } }
+    min-height: 592px; }
+  .routes__item {
+    min-height: 474px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
