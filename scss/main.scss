@@ -24,10 +24,7 @@ body input:required:valid,
 body textarea:required:valid{
     color: #666;
 }
-.inner{
-    width:1600px;
-    margin: 0 auto;
-}
+
 //Custom Styles Here
 h1{
     font-family: Roboto;
@@ -54,6 +51,7 @@ h1{
     line-height: 24px;
     text-transform: uppercase;
     padding-top: 30px;
+    min-height: 102px;
 }
 .data{
     color: #dd0808;
@@ -81,9 +79,9 @@ h1{
 }
 .news-bord img{
     padding: 15px 0 0 0;
+    width: 100%;
 }
 .news-ser{
-    height: 213px;
     color: #8b8b8b;
     font-family: 'Istok Web', sans-serif;
     font-size: 14px;
