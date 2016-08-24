@@ -22,13 +22,16 @@ body input:required:valid,
 body textarea:required:valid {
   color: #666; }
 
-h1 {
+.news-right {
+  color: #222;
   font-family: Roboto;
-  font-size: 36px;
-  font-weight: 500; }
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 10px; }
 
-.news {
-  text-align: center; }
+.news-left {
+  padding-bottom: 20px; }
 
 .news-bord {
   border-top: 1px solid #d3d3d3; }
@@ -39,7 +42,7 @@ h1 {
   background-color: #dedede;
   margin-top: 16px; }
 
-.news-bord h2 {
+.news-bord h4 {
   color: #222;
   font-family: Roboto;
   font-size: 16px;
@@ -83,7 +86,9 @@ h1 {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  max-height: 200px;
+  overflow: hidden; }
 
 .all-news-popup {
   border: 2px solid lightgrey;
@@ -98,10 +103,6 @@ h1 {
   .all-news-popup:hover {
     background-color: #8a8a8a; }
 
-.bot-news-button {
-  width: 181px;
-  margin: 20px auto; }
-
 .news p {
   color: #222;
   font-family: Roboto;
@@ -109,13 +110,29 @@ h1 {
   font-weight: 400;
   text-transform: uppercase; }
 
+.routes__item__p1 {
+  color: #222;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.routes__item__p2 {
+  color: #222;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px; }
+
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .news-ser {
+    max-height: 195px; } }
+
 @media only screen and (max-width: 1128px) {
   .news-bord h2 {
-    min-height: 126px; }
-  .news-ser {
-    font-size: 10px;
-    line-height: 14px; } }
+    min-height: 126px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -137,9 +154,17 @@ h1 {
         float: none; }
     footer .gs {
       float: none;
-      display: block; } }
+      display: block; }
+  .news-ser {
+    max-height: 120px; }
+  .news-mid__item {
+    min-height: 592px; } }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .news-mid__item {
+    min-height: 10px; } }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .pad {
@@ -155,14 +180,20 @@ body {
   font-weight: 400; }
 
 h1 {
-  font-size: 52px;
   font-weight: 700;
   line-height: 78px; }
 
+h2 {
+  font-size: 52px;
+  font-weight: 700px; }
+
 h3 {
-  color: #222;
+  font-family: Roboto;
   font-size: 36px;
-  font-weight: 500; }
+  font-weight: 500;
+  padding-left: 10px;
+  border-left: 4px solid #dd0808;
+  line-height: 35px; }
 
 .p-thin {
   font-size: 28px;

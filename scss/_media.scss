@@ -3,17 +3,16 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+    .news-ser{
+      max-height: 195px;
+    }
 }
 
 @media only screen and (max-width : 1128px) {
 	.news-bord h2{
 		min-height: 126px;
 	}
-	.news-ser{
-		font-size: 10px;
-		line-height: 14px;
-	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -43,12 +42,21 @@
 			float: none;
 			display: block;
 		}
+
 	}
+  .news-ser{
+    max-height: 120px;
+  }
+  .news-mid__item{
+    min-height: 592px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  .news-mid__item{
+    min-height: 10px;
+  }
 }
 
 /* Extra Small Devices, Phones */
